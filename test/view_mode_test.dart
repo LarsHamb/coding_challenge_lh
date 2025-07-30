@@ -25,7 +25,7 @@ void main() {
 
     test('should have all view modes available', () {
       final allModes = CalendarViewMode.values;
-      expect(allModes.length, equals(3));
+      expect(allModes.length, equals(2));
       expect(allModes, contains(CalendarViewMode.list));
       expect(allModes, contains(CalendarViewMode.week));
     });
