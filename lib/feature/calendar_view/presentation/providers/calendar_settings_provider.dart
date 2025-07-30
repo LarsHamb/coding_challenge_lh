@@ -3,7 +3,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 // Enum for different view modes
 enum CalendarViewMode {
   list('List View'),
-  compact('Compact View'),
   week('Week View');
 
   const CalendarViewMode(this.displayName);

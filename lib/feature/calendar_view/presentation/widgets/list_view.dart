@@ -3,7 +3,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../providers/location_provider.dart';
 import '../providers/booking_provider.dart';
 import '../providers/calendar_settings_provider.dart';
-import 'compact_view.dart';
 import 'week_view.dart';
 
 class DayView extends ConsumerStatefulWidget {
@@ -38,8 +37,6 @@ class _DayViewState extends ConsumerState<DayView> {
 
     // Check view mode and render appropriate widget
     switch (settings.viewMode) {
-      case CalendarViewMode.compact:
-        return const CompactView();
       case CalendarViewMode.week:
         return const WeekView();
       case CalendarViewMode.list:
